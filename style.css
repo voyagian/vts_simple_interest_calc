@@ -1,2 +1,2 @@
-body {background-color:white;}
-h1{color:grey;}
+body {font-family: Arial, sans-serif; background-color:white;}
+h1{font-size: 50px; color:grey;font-family: Tahoma, sans-serif;text-align: center;}
