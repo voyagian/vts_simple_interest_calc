@@ -1,3 +1,24 @@
-body {font-weight: 450;font-size: 25px;font-family: Arial, sans-serif; background-color:white;text-align: left;}
-h1{font-size: 60px; color:grey;font-family: Tahoma, sans-serif;text-align: left;}
-footer{text-align: left;}
+body {
+  font-size: 25px;
+  font-family: Verdana, sans-serif;
+  background-color:black;
+  text-align: left;
+}
+h1 {
+  font-size: 52px;
+  color: grey;
+  background-color:white;
+  text-align:center;
+  border-radius: 25px;
+  border: 2px solid #2b2926;
+  padding: 20px;
+  width: 860px;
+  height: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+footer{
+  text-align: left;
+}
