@@ -8,9 +8,28 @@
 
         <div style="text-align: center;color: black;font-size: 18px;font-weight: 475;">
           <div style="display: inline-block; text-align: left;">
-        Amount <input type="number"  id="principal"> <br/><br/>
-        Interest Rate <input type="number"  id="rate">  <br/><br/>
-        No. of Years <input type="number"  id="years">  <br/><br/>
+        <form action="/calculate">
+            <label for="amount"> Amount </label>
+            <input type="text"  id="principal">
+            <br/><br/>
+            <label for="rate"> Interest Rate </label>
+            <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
+            <input type="text" id="rate" value="">%
+            <br/><br/>
+            <label for="years"> No. of Years </label>
+            <select id="years" name="years">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+            <br/><br/>
         <!Interest : <span id="result"></span>
 
         <button onclick="compute()"> Compute Interest </button><br/><br/>
