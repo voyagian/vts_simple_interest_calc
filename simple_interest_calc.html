@@ -10,11 +10,11 @@
           <div style="display: inline-block; text-align: left;">
         <form action="/calculate">
             <label for="amount"> Amount </label>
-            <input type="text"  id="principal">
+            <input type="number"  id="principal">
             <br/><br/>
             <label for="rate"> Interest Rate </label>
-            <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);">
-            <input type="text" id="rate" value="">%
+            <input type="range" name="rangeInput" id="rate" step=".5" value="3.5" min=".5" max="10" oninput="rangeOutput.value = rangeInput.value">
+            <td><output id="rOutput" name="rangeOutput" for="rate" >3.5</output>%</td>
             <br/><br/>
             <label for="years"> No. of Years </label>
             <select id="years" name="years">
@@ -29,20 +29,20 @@
               <option value="9">9</option>
               <option value="10">10</option>
             </select>
-            <br/><br/>
-        <!Interest : <span id="result"></span>
+            <br/>
 
-        <button onclick="compute()"> Compute Interest </button><br/><br/>
+        <button onclick="compute();"> Compute Interest </button><br/>
+        <span id="result"></span></br>
 
-        If you deposit 1000000,<br/>
-        at an interest rate of 3.55%.<br/>
-        You will recieve an amount of 175000,<br/>
-        in the year 2025
           </div>
+          <footer>
+            <p style="text-align: left;color: black;font-size: 18px;font-weight: 475;">
+            &copy; Everyone Can Get Rich
+          </footer>
         </div>
 
-        <p style="text-align: left;color: black;font-size: 18px;font-weight: 475;">
-        &copy; Everyone Can Get Rich
       </h1>
+
     </body>
+
 </html>
